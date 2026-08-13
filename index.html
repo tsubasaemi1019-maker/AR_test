@@ -23,8 +23,7 @@
 
   /* AR.js が挿入する video / canvas を確実に画面いっぱいに表示する */
   #arjs-video,
-  a-scene video,
-  a-scene canvas{
+  a-scene video{
     position:fixed !important;
     top:0 !important;
     left:0 !important;
@@ -32,6 +31,16 @@
     height:100vh !important;
     object-fit:cover !important;
     z-index:1 !important;
+  }
+  a-scene canvas{
+    position:fixed !important;
+    top:0 !important;
+    left:0 !important;
+    width:100vw !important;
+    height:100vh !important;
+    object-fit:cover !important;
+    z-index:2 !important;
+    background:transparent !important;
   }
 
   /* ---- top instruction bar ---- */
